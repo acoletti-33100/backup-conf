@@ -1,0 +1,13 @@
+alias.hist=log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+alias.chbr=checkout
+alias.comm=commit
+alias.last=log -1 HEAD
+alias.br=branch
+alias.ustage=reset HEAD --
+alias.st=status
+alias.onel=log --oneline --decorate --graph --all
+core.editor=vim
+color.branch=auto
+color.diff=auto
+color.interactive=auto
+color.status=auto

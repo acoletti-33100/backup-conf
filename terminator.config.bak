@@ -1,0 +1,47 @@
+[global_config]
+  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  suppress_multiple_term_dialog = True
+[keybindings]
+  close_term = <Primary>q
+  close_window = <Primary><Shift>q
+  copy = <Primary><Shift>c
+  cycle_next = <Alt>4
+  cycle_prev = <Alt>3
+  go_down = <Primary>Down
+  go_left = <Primary>Left
+  go_next = <Alt>Right
+  go_prev = <Alt>Left
+  go_right = <Primary>Right
+  go_up = <Primary>Up
+  group_all_toggle = None
+  hide_window = None
+  move_tab_left = <Primary>1
+  move_tab_right = <Primary>2
+  new_tab = <Primary><Alt>n
+  new_window = <Primary><Alt>t
+  next_tab = <Alt>2
+  paste = <Primary><Shift>v
+  prev_tab = <Alt>1
+  search = <Primary><Alt>f
+  split_horiz = <Primary>Tab
+  split_vert = <Primary>backslash
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      profile = default
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      size = 1750, 400
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_color = "#140c0c"
+    background_image = None
+    cursor_color = "#08ff00"
+    font = Monospace 18
+    foreground_color = "#ffffff"
+    palette = "#000000:#cd0000:#00cd00:#cdcd00:#0000ee:#cd00cd:#00cdcd:#e5e5e5:#7f7f7f:#ff0000:#00ff00:#ffff00:#5c5cff:#ff00ff:#00ffff:#ffffff"
+    use_system_font = False
