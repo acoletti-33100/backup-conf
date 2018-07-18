@@ -1,0 +1,125 @@
+# bash aliases
+# ls
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+#web
+alias nt='netstat'
+alias ntanp='netstat -anp | less'
+alias ntano='netstat -ano | less'
+alias ifc='ifconfig'
+alias iwc='iwconfig'
+alias p='ping'
+#extract 
+alias dt='tar -xvf' # .tar files
+alias dgz='tar -xzvf' # .tar.gz files
+alias dbz='tar -xjvf' # .tar.bz2 files
+#find
+alias ff='find ./ -type f'
+alias fd='find ./ -type d'
+# search & substitution
+alias cm='comm'
+alias gre='grep'
+alias gr='grep -i'
+# case sensitive
+alias grecss='grep --color --include="*.css"'
+alias grejson='grep --color --include="*.json"'
+alias greh='grep --color --include="*.h"'
+alias grepy='grep --color --include="*.py"'
+alias grecpp='grep --color --include="*.cpp"'
+alias grexml='grep --color --include="*.xml"'
+alias grehtml='grep --color --include="*.html"'
+alias grej='grep --color --include="*.java"'
+alias gretxt='grep --color --include="*.txt"'
+alias gretex='grep --color --include="*.tex"'
+alias grejs='grep --color --include="*.js"'
+# case insensitive
+alias grcss='grep -i --color --include="*.css"'
+alias grjson='grep -i --color --include="*.json"'
+alias grh='grep -i --color --include="*.h"'
+alias grpy='grep -i --color --include="*.py"'
+alias grcpp='grep -i --color --include="*.cpp"'
+alias grxml='grep -i --color --include="*.xml"'
+alias grhtml='grep -i --color --include="*.html"'
+alias grj='grep -i --color --include="*.java"'
+alias grtxt='grep -i --color --include="*.txt"'
+alias grtex='grep -i --color --include="*.tex"'
+alias grjs='grep -i --color --include="*.js"'
+# miscellanei
+alias v='vim'
+alias dm='dmesg'
+alias dmt='dmesg | tail'
+alias dmh='dmesg | head'
+alias pl='pdflatex -file-line-error'
+alias pth='pdftohtml'
+alias hist='history | less'
+alias ok='okular'
+alias pl='pdflatex'
+alias wis='whatis'
+alias apos='apropos'
+alias mnt='mount'
+alias umnt='umount'
+alias le='less'
+#movements
+alias c-='cd -'
+alias c--='cd --'
+alias c~='cd ~'
+alias c.='cd ..'
+alias cd.='cd ..'
+alias c2='cd ../../'
+alias c3='cd ../../../'
+alias c4='cd ../../../../'
+alias c5='cd ../../../../../'
+alias c6='cd ../../../../../../'
+# git
+alias g='git'
+alias gcl='git clone'
+alias gmv='git mv'
+alias grm='git rm'
+alias gme='git merge'
+alias gb='git branch'
+alias gcb='git checkout'
+alias gps='git push'
+alias gpll='git pull'
+alias ga='git add'
+alias grs='git reset'
+alias grsh='git reset HEAD'
+alias gm='git commit'
+alias gm='git commit --amend'
+alias gst='git status'
+alias gh='git hist'
+alias ghlp='git help'
+alias gl='git log -1 HEAD'
+alias gu='git reset HEAD --' # git ustage; unstage changes
+alias grv='git revert'
+alias glg='git log'
+alias gslg='git shortlog'
+alias gol='git onel'
+alias gdf='git diff'
+alias gfcm='git diff-tree --no-commit-id --name-only -r'
+alias gtbps='git diff --stat --cached' # shows commited files to be pushed : git diff --stat --cached [remote/branch]
+alias grb='git rebase'
+alias grb='git rebase --continue'
+alias gsb='git show-branch'
+alias grso='git remote show origin'
+# git completions
+__git_complete g _git
+__git_complete gcl _git_clone
+__git_complete gmv _git_mv
+__git_complete grm _git_rm
+__git_complete gme _git_merge
+__git_complete gb _git_branch
+__git_complete gcb _git_checkout
+__git_complete gps _git_push
+__git_complete gpll _git_pull
+__git_complete ga _git_add
+__git_complete grs _git_reset
+__git_complete gm _git_commit
+__git_complete glg _git_log
+__git_complete gdf _git_diff
+__git_complete grb _git_rebase
+__git_complete gsb _git_show_branch
+
+# Add an "alert" alias for long running commands.  Use like so:
+#   sleep 10; alert
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
