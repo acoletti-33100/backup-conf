@@ -2,5 +2,5 @@
 <h1>Configurations files | Backup</h1>
 </div>
 
-## This repository stores somes useful configuration files.
+## This repository stores some useful configuration files.
 
