@@ -3,6 +3,14 @@
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+#power levels
+alias spl4='xrandr --output eDP-1 --brightness 0.4' # set power levels to 40%
+alias spl5='xrandr --output eDP-1 --brightness 0.5'
+alias spl6='xrandr --output eDP-1 --brightness 0.6'
+alias spl7='xrandr --output eDP-1 --brightness 0.7'
+alias spl8='xrandr --output eDP-1 --brightness 0.8'
+alias spl9='xrandr --output eDP-1 --brightness 0.9'
+alias spl1='xrandr --output eDP-1 --brightness 1'
 #web
 alias nt='netstat'
 alias ntanp='netstat -anp | less'
@@ -47,6 +55,7 @@ alias grtex='grep -i --color --include="*.tex"'
 alias grjs='grep -i --color --include="*.js"'
 # miscellanei
 alias v='vim'
+alias s='sed'
 alias dm='dmesg'
 alias dmt='dmesg | tail'
 alias dmh='dmesg | head'
@@ -71,54 +80,6 @@ alias c3='cd ../../../'
 alias c4='cd ../../../../'
 alias c5='cd ../../../../../'
 alias c6='cd ../../../../../../'
-# git
-alias g='git'
-alias gcl='git clone'
-alias gmv='git mv'
-alias grm='git rm'
-alias gme='git merge'
-alias gb='git branch'
-alias gcb='git checkout'
-alias gps='git push'
-alias gpll='git pull'
-alias ga='git add'
-alias grs='git reset'
-alias grsh='git reset HEAD'
-alias gm='git commit'
-alias gm='git commit --amend'
-alias gst='git status'
-alias gh='git hist'
-alias ghlp='git help'
-alias gl='git log -1 HEAD'
-alias gu='git reset HEAD --' # git ustage; unstage changes
-alias grv='git revert'
-alias glg='git log'
-alias gslg='git shortlog'
-alias gol='git onel'
-alias gdf='git diff'
-alias gfcm='git diff-tree --no-commit-id --name-only -r'
-alias gtbps='git diff --stat --cached' # shows commited files to be pushed : git diff --stat --cached [remote/branch]
-alias grb='git rebase'
-alias grb='git rebase --continue'
-alias gsb='git show-branch'
-alias grso='git remote show origin'
-# git completions
-__git_complete g _git
-__git_complete gcl _git_clone
-__git_complete gmv _git_mv
-__git_complete grm _git_rm
-__git_complete gme _git_merge
-__git_complete gb _git_branch
-__git_complete gcb _git_checkout
-__git_complete gps _git_push
-__git_complete gpll _git_pull
-__git_complete ga _git_add
-__git_complete grs _git_reset
-__git_complete gm _git_commit
-__git_complete glg _git_log
-__git_complete gdf _git_diff
-__git_complete grb _git_rebase
-__git_complete gsb _git_show_branch
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert

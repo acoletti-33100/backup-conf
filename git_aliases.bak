@@ -1,0 +1,49 @@
+# git bash aliases
+alias g='git'
+alias gcl='git clone'
+alias gmv='git mv'
+alias grm='git rm'
+alias gme='git merge'
+alias gb='git branch'
+alias gcb='git checkout'
+alias gps='git push'
+alias gpll='git pull'
+alias ga='git add'
+alias grs='git reset'
+alias grsh='git reset HEAD'
+alias gm='git commit'
+alias gma='git commit --amend'
+alias gst='git status'
+alias gh='git hist'
+alias ghlp='git help'
+alias gl='git log'
+alias gll='git log -1 HEAD'
+alias glh='git log HEAD..origin/master'
+alias gu='git reset HEAD --' # git ustage; unstage changes
+alias grv='git revert'
+alias gslg='git shortlog'
+alias gol='git onel'
+alias gdf='git diff'
+alias gfcm='git diff-tree --no-commit-id --name-only -r'
+alias gtbps='git diff --stat --cached' # shows commited files to be pushed : git diff --stat --cached [remote/branch]
+alias grb='git rebase'
+alias grb='git rebase --continue'
+alias gsb='git show-branch'
+alias grso='git remote show origin'
+# git completions
+__git_complete g _git
+__git_complete gcl _git_clone
+__git_complete gmv _git_mv
+__git_complete grm _git_rm
+__git_complete gme _git_merge
+__git_complete gb _git_branch
+__git_complete gcb _git_checkout
+__git_complete gps _git_push
+__git_complete gpll _git_pull
+__git_complete ga _git_add
+__git_complete grs _git_reset
+__git_complete gm _git_commit
+__git_complete glg _git_log
+__git_complete gdf _git_diff
+__git_complete grb _git_rebase
+__git_complete gsb _git_show_branch
